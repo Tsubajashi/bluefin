@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/Tsubajashi/bluefin/compare/v1.1.0...v1.2.0) (2023-09-07)
+
+
+### Features
+
+* change default accent color to blue, mention that its a fork ([c30180e](https://github.com/Tsubajashi/bluefin/commit/c30180e90d91fa50ac8df79c8e48d946c88654ac))
+* enable new extensions by default ([a0db9c5](https://github.com/Tsubajashi/bluefin/commit/a0db9c53f6bf23cdb938e3452f51aecf24b7628d))
+
 ## [1.1.0](https://github.com/Tsubajashi/bluefin/compare/v1.0.1...v1.1.0) (2023-09-07)
 
 
