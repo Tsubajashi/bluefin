@@ -54,6 +54,7 @@ screens:
           - Clocks: org.gnome.clocks
           - Picture Viewer: org.gnome.eog
           - Font Viewer: org.gnome.font-viewer
+          - Blackbox Terminal: com.raggesilver.BlackBox
         Other Web Browsers:
           description: Additional browsers to complement Firefox
           default: false
@@ -72,7 +73,6 @@ screens:
           - MangoHUD: org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
           - Steam: com.valvesoftware.Steam
           - Gamescope for Steam: org.freedesktop.Platform.VulkanLayer.gamescope
-          - Proton Updater (QT) for Steam: net.davidotek.pupgui2
           - Proton Updater (GTK) for Steam: com.vysp3r.ProtonPlus
         Office:
           description: Bow to Capitalism
@@ -89,7 +89,7 @@ screens:
           default: false
           packages:
           - OBS Studio: com.obsproject.Studio
-          - VkCapture for OBS: com.obsproject.Studio.OBSVkCapture 
+          - VkCapture for OBS: com.obsproject.Studio.OBSVkCapture
           - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
           - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
           - Boatswain for Streamdeck: com.feaneron.Boatswain
@@ -101,29 +101,30 @@ screens:
         Utilities:
           description: Useful Utilities
           default: true
-          packagess:
+          packages:
           - Font Downloader: org.gustavoperedo.FontDownloader
           - PinApp Menu Editor: io.github.fabrialberio.pinapp
           - Backup: org.gnome.DejaDup
-          - Blackbox Terminal: com.raggesilver.BlackBox
           - Syncthing: com.github.zocker_160.SyncThingy
         Admin Tools:
           description: Helper Utilities for Administration
           default: false
           packages:
           - Cockpit Client: org.cockpit_project.CockpitClient
-          
+
   final-screen:
     source: yafti.screen.title
     values:
       title: "All done!"
       icon: "/path/to/icon"
       links:
-        - "Install More Applications": 
+        - "Install More Applications":
             run: /usr/bin/gnome-software
         - "Website":
             run: /usr/bin/xdg-open https://ublue.it
+        - "Discussions and Announcements":
+            run: /usr/bin/xdg-open https://github.com/orgs/ublue-os/discussions/categories/bluefin
         - "Join the Discord Community":
-            run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx 
+            run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx
       description: |
         Thanks for trying Bluefin, we hope you enjoy it!
