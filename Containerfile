@@ -87,11 +87,14 @@ RUN wget https://raw.githubusercontent.com/ahmetb/kubectx/master/kubectx -O /usr
     wget https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens -O /usr/bin/kubens && \
     chmod +x /usr/bin/kubectx /usr/bin/kubens
 
-    
+# Install Mullvad-VPN
+RUN wget https://mullvad.net/download/app/rpm/latest -O /tmp/latest.rpm && \
+    rpm-ostree install /tmp/latest.rpm
 
 RUN systemctl enable podman.socket
 RUN systemctl disable pmie.service
 RUN systemctl disable pmlogger.service
+RUN systemctl enable mullvad-daemon
 
 RUN /tmp/workarounds.sh
 
