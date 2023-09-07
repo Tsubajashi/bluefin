@@ -70,12 +70,14 @@ screens:
           - Bottles: com.usebottles.bottles
           - Heroic Games Launcher: com.heroicgameslauncher.hgl
           - Lutris: net.lutris.Lutris
+          - RetroArch: org.libretro.RetroArch
           - Final Fantasy XIV Launcher: dev.goats.xivlauncher
           - Cartridges: hu.kramo.Cartridges
           - MangoHUD: org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
           - Steam: com.valvesoftware.Steam
           - Gamescope for Steam: org.freedesktop.Platform.VulkanLayer.gamescope
           - Proton Updater (GTK) for Steam: com.vysp3r.ProtonPlus
+          - Protontricks: com.github.Matoking.protontricks
         Office:
           description: Bow to Capitalism
           default: false
@@ -95,6 +97,24 @@ screens:
           - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
           - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
           - Boatswain for Streamdeck: com.feaneron.Boatswain
+        Video/Audio Production:
+          description: All the things you need to create your own content
+          default: false
+          packages:
+          - Audacity: org.audacityteam.Audacity
+          - Kdenlive: org.kde.kdenlive
+          - Blender: org.blender.Blender
+          - Aviator (AV1 Encoding GUI): net.natesales.Aviator
+          - Video Trimmer: org.gnome.gitlab.YaLTeR.VideoTrimmer
+        Video/Audio Players:
+          description: For your Video/Audio Consumption needs.
+          default: false
+          packages:
+          - Spotify: com.spotify.Client
+          - Youtube Music: app.ytmdesktop.ytmdesktop
+          - Apple Music: sh.cider.Cider
+          - Clapper: com.github.rafostar.Clapper
+          - G4Music: com.github.neithern.g4music
         Communication:
           description: Tools to communicate and collaborate
           default: true
@@ -110,6 +130,8 @@ screens:
           - PinApp Menu Editor: io.github.fabrialberio.pinapp
           - Backup: org.gnome.DejaDup
           - Syncthing: com.github.zocker_160.SyncThingy
+          - Video Downloader: com.github.unrud.VideoDownloader
+          - Fragments (Torrent Manager): de.haeckerfelix.Fragments
         Admin Tools:
           description: Helper Utilities for Administration
           default: true
