@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/Tsubajashi/bluefin/compare/v1.2.0...v1.3.0) (2023-09-07)
+
+
+### Features
+
+* add cjk fonts ([ede8cc9](https://github.com/Tsubajashi/bluefin/commit/ede8cc989e8502521f0427200161ddf85905f052))
+* add VKCapture Support for Flatpaks ([eccaa44](https://github.com/Tsubajashi/bluefin/commit/eccaa44c51b93bde1dbfd7cc011daf7c5e87ddcb))
+
 ## [1.2.0](https://github.com/Tsubajashi/bluefin/compare/v1.1.0...v1.2.0) (2023-09-07)
 
 
