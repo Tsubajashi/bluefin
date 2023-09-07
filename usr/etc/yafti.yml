@@ -65,11 +65,13 @@ screens:
           - Opera: com.opera.Opera
         Gaming:
           description: "Rock and Stone!"
-          default: false
+          default: true
           packages:
           - Bottles: com.usebottles.bottles
           - Heroic Games Launcher: com.heroicgameslauncher.hgl
           - Lutris: net.lutris.Lutris
+          - Final Fantasy XIV Launcher: dev.goats.xivlauncher
+          - Cartridges: hu.kramo.Cartridges
           - MangoHUD: org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
           - Steam: com.valvesoftware.Steam
           - Gamescope for Steam: org.freedesktop.Platform.VulkanLayer.gamescope
@@ -95,10 +97,11 @@ screens:
           - Boatswain for Streamdeck: com.feaneron.Boatswain
         Communication:
           description: Tools to communicate and collaborate
-          default: false
+          default: true
           packages:
           - Discord: com.discordapp.Discord
           - Slack: com.slack.Slack
+          - Ferdium: org.ferdium.Ferdium
         Utilities:
           description: Useful Utilities
           default: true
@@ -109,7 +112,7 @@ screens:
           - Syncthing: com.github.zocker_160.SyncThingy
         Admin Tools:
           description: Helper Utilities for Administration
-          default: false
+          default: true
           packages:
           - Cockpit Client: org.cockpit_project.CockpitClient
 
