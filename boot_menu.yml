@@ -1,15 +1,13 @@
 ublue_variants:
-  - label: ublue-os/bluefin
+  - label: tsubajashi/bluefin
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: bluefin
         info: Bluefin
-  - label: ublue-os/bluefin-nvidia
+  - label: tsubajashi/bluefin
     ks: /kickstart/ublue-os-nvidia.ks
     subvariants:
       - label: latest driver
-      - label: 535xx driver
-        suffix: -535
     flavors:
       - label: bluefin-nvidia
         info: Bluefin
