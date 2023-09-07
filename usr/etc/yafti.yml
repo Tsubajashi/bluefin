@@ -5,7 +5,7 @@ screens:
   first-screen:
     source: yafti.screen.title
     values:
-      title: "Welcome to Bluefin (Alpha)"
+      title: "Welcome to Bluefin (Alpha, Tsubajashis Fork)"
       icon: "/path/to/icon"
       description: |
         Pick some applications to get started
