@@ -95,6 +95,7 @@ screens:
           - Boatswain for Streamdeck: com.feaneron.Boatswain
         Communication:
           description: Tools to communicate and collaborate
+          default: false
           packages:
           - Discord: com.discordapp.Discord
           - Slack: com.slack.Slack
