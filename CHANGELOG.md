@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.0](https://github.com/Tsubajashi/bluefin/compare/v1.0.1...v1.1.0) (2023-09-07)
+
+
+### Features
+
+* add caffeine per default ([22e86cf](https://github.com/Tsubajashi/bluefin/commit/22e86cfa1e85c4e1a99b50510de8b51ff75c7235))
+* Add more submenus and Applications to yafti ([9f6fb49](https://github.com/Tsubajashi/bluefin/commit/9f6fb497c206757124232907f4d0ef3cf9f7cdf3))
+* add new applications in yafti ([5dc973c](https://github.com/Tsubajashi/bluefin/commit/5dc973c3e790d0dba01ec14b9a3dbe6553451a75))
+
 ## [1.0.1](https://github.com/Tsubajashi/bluefin/compare/v1.0.0...v1.0.1) (2023-09-07)
 
 
