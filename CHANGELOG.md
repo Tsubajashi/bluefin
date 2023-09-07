@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Tsubajashi/bluefin/compare/v1.0.0...v1.0.1) (2023-09-07)
+
+
+### Bug Fixes
+
+* add false default in yafti ([47d0540](https://github.com/Tsubajashi/bluefin/commit/47d054049b2b3849eba49f9521638eec096a646d))
+
 ## 1.0.0 (2023-09-07)
 
 
