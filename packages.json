@@ -9,6 +9,8 @@
 				"gnome-shell-extension-blur-my-shell",
 				"gnome-shell-extension-dash-to-dock",
 				"gnome-shell-extension-gsconnect",
+				"gnome-shell-extension-system76-scheduler",
+				"system76-scheduler",
 				"input-remapper",
 				"libgda-sqlite",
 				"libgda",

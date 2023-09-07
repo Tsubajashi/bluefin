@@ -21,6 +21,9 @@ RUN wget https://copr.fedorainfracloud.org/coprs/kylegospo/gnome-vrr/repo/fedora
 RUN rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr mutter mutter-common gnome-control-center gnome-control-center-filesystem xorg-x11-server-Xwayland
 RUN rm -f /etc/yum.repos.d/_copr_kylegospo-gnome-vrr.repo
 
+# System76-scheduler
+RUN wget https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-$(rpm -E %fedora)/kylegospo-system76-scheduler-fedora-$(rpm -E %fedora).repo -O /etc/yum.repos.d/_copr_kylegospo-system76-scheduler.repo
+
 ## bootc
 RUN wget https://copr.fedorainfracloud.org/coprs/rhcontainerbot/bootc/repo/fedora-"${FEDORA_MAJOR_VERSION}"/bootc-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/bootc.repo
 RUN rpm-ostree install bootc
@@ -31,6 +34,7 @@ RUN /tmp/build.sh && \
     systemctl enable rpm-ostree-countme.service && \
     systemctl enable tailscaled.service && \
     systemctl enable dconf-update.service && \
+    systemctl enable com.system76.Scheduler.service && \
     fc-cache -f /usr/share/fonts/ubuntu && \
     fc-cache -f /usr/share/fonts/inter && \
     rm -f /etc/yum.repos.d/tailscale.repo && \
@@ -100,6 +104,7 @@ RUN rm -f /etc/yum.repos.d/ganto-lxc4-fedora-"${FEDORA_MAJOR_VERSION}".repo
 RUN rm -f /etc/yum.repos.d/vscode.repo
 RUN rm -f /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
 RUN rm -f /etc/yum.repos.d/fedora-cisco-openh264.repo
+RUN sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-system76-scheduler.repo
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
