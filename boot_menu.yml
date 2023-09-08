@@ -6,8 +6,6 @@ ublue_variants:
         info: Bluefin
   - label: tsubajashi/bluefin-nvidia
     ks: /kickstart/ublue-os-nvidia.ks
-    subvariants:
-      - label: latest driver
     flavors:
       - label: bluefin-nvidia
         info: Bluefin
