@@ -35,6 +35,7 @@ RUN /tmp/build.sh && \
     systemctl enable tailscaled.service && \
     systemctl enable dconf-update.service && \
     systemctl enable com.system76.Scheduler.service && \
+    ln -s "/usr/share/fonts/google-noto-sans-cjk-fonts" "/usr/share/fonts/noto-cjk" && \
     fc-cache -f /usr/share/fonts/ubuntu && \
     fc-cache -f /usr/share/fonts/inter && \
     rm -f /etc/yum.repos.d/tailscale.repo && \
@@ -98,14 +99,13 @@ RUN systemctl disable pmlogger.service
 
 RUN /tmp/workarounds.sh
 
-# Clean up repos, everything is on the image so we don't need them. Also links proper cjk fonts.
+# Clean up repos, everything is on the image so we don't need them.
 RUN rm -f /etc/yum.repos.d/bobslept-nerd-fonts-fedora-"${FEDORA_MAJOR_VERSION}".repo
 RUN rm -f /etc/yum.repos.d/ganto-lxc4-fedora-"${FEDORA_MAJOR_VERSION}".repo
 RUN rm -f /etc/yum.repos.d/vscode.repo
 RUN rm -f /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
 RUN rm -f /etc/yum.repos.d/fedora-cisco-openh264.repo
 RUN sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-system76-scheduler.repo
-RUN ln -s "/usr/share/fonts/google-noto-sans-cjk-fonts" "/usr/share/fonts/noto-cjk"
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
