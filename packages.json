@@ -27,7 +27,8 @@
 				"yaru-theme",
 				"zsh",
 				"zsh-autosuggestions",
-				"google-noto-sans-cjk-fonts"
+				"google-noto-sans-cjk-fonts",
+				"neofetch"
 			],
 			"bluefin-dx": [
 				"adobe-source-code-pro-fonts",
