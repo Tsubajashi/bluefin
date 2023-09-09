@@ -5,6 +5,8 @@
 				"bash-color-prompt",
 				"cockpit-bridge",
 				"fish",
+				"gnome-terminal-nautilus",
+				"gnome-shell-extension-pop-shell",
 				"gnome-shell-extension-appindicator",
 				"gnome-shell-extension-blur-my-shell",
 				"gnome-shell-extension-dash-to-dock",
