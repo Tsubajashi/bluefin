@@ -24,11 +24,6 @@ RUN rm -f /etc/yum.repos.d/_copr_kylegospo-gnome-vrr.repo
 # System76-scheduler
 RUN wget https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-$(rpm -E %fedora)/kylegospo-system76-scheduler-fedora-$(rpm -E %fedora).repo -O /etc/yum.repos.d/_copr_kylegospo-system76-scheduler.repo
 
-# MullvadVPN
-RUN wget https://mullvad.net/de/download/app/rpm/latest -O /tmp/latest.rpm && \
-    rpm-ostree install '/tmp/latest.rpm' && \
-    rm -f /tmp/latest.rpm
-
 ## bootc
 RUN wget https://copr.fedorainfracloud.org/coprs/rhcontainerbot/bootc/repo/fedora-"${FEDORA_MAJOR_VERSION}"/bootc-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/bootc.repo
 RUN rpm-ostree install bootc
