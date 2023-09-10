@@ -140,6 +140,12 @@ screens:
           default: true
           packages:
           - Cockpit Client: org.cockpit_project.CockpitClient
+        Development Tools:
+          description: Useful Development Tools (IDEs, GIT GUIs, etc.)
+          default: true
+          packages:
+          - Sublime Text: com.sublimetext.three
+          - Sublime Merge: com.sublimemerge.App
 
   final-screen:
     source: yafti.screen.title
