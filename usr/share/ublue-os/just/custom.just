@@ -1,3 +1,30 @@
+# What to do after a rebase (Nvidia)
+nvidia-after-rebase:
+  xdg-open https://universal-blue.org/images/nvidia/#2-set-kargs-after-rebasing
+
+# Set up Bazzite-Arch Distrobox container
+install-bazzite-arch:
+  echo 'Installing Bazzite Arch...' && \
+  if [[ ${BASE_IMAGE_NAME} == 'kinoite' ]]; then \
+    distrobox create --name bazzite-arch --image ghcr.io/ublue-os/bazzite-arch --nvidia --yes --volume /usr/lib/extest/libextest.so:/usr/lib/extest/libextest.so:ro --volume /usr/share/icons:/usr/share/icons:ro --volume /usr/share/themes:/usr/share/themes:ro; \
+  else \
+    distrobox create --name bazzite-arch --image ghcr.io/ublue-os/bazzite-arch-gnome --nvidia --yes --volume /usr/lib/extest/libextest.so:/usr/lib/extest/libextest.so:ro --volume /usr/share/icons:/usr/share/icons:ro --volume /usr/share/themes:/usr/share/themes:ro; \
+  fi && \
+  echo 'Exporting applications...' && \
+  distrobox-enter -n bazzite-arch -- 'bash -c "sudo locale-gen && distrobox-export --app steam && distrobox-export --app lutris && distrobox-export --app protontricks && mkdir -p $HOME/.steam && distrobox-export --bin /usr/bin/steamcmd --export-path ~/.steam && mv $HOME/.steam/steamcmd $HOME/.steam/steamcmd.sh"' && \
+  echo 'Starting Steam...' && \
+  distrobox-enter -n bazzite-arch -- '  /usr/bin/bazzite-steam-runtime --silent &>/dev/null &' && \
+  if [[ ${BASE_IMAGE_NAME} == 'kinoite' ]]; then \
+    echo 'Creating desktop shortcuts...' && \
+    cp ~/.local/share/applications/bazzite-arch-steam.desktop ~/Desktop/bazzite-arch-steam.desktop && \
+    sed -i 's@  (on bazzite-arch)@@g' ~/Desktop/bazzite-arch-steam.desktop && \
+    cp ~/.local/share/applications/bazzite-arch-net.lutris.Lutris.desktop ~/Desktop/bazzite-arch-net.lutris.Lutris.desktop && \
+    sed -i 's@  (on bazzite-arch)@@g' ~/Desktop/bazzite-arch-net.lutris.Lutris.desktop; \
+  fi && \
+  echo 'Finalizing...' && \
+  sleep 10 && \
+  rm -f ~/Desktop/steam.desktop
+
 # Run a one minute system benchmark
 benchmark:
   echo 'Running a 1 minute benchmark ...'
