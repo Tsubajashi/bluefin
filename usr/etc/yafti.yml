@@ -149,6 +149,7 @@ screens:
           - Syncthing: com.github.zocker_160.SyncThingy
           - Video Downloader: com.github.unrud.VideoDownloader
           - Fragments (Torrent Manager): de.haeckerfelix.Fragments
+          - Mission Center (Task Manager Alternative): io.missioncenter.MissionCenter
         Admin Tools:
           description: Helper Utilities for Administration
           default: true
