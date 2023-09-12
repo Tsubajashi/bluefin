@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         image_flavor: [main, nvidia]
-        base_name: [bluefin, bluefin-dx, bluefin-framework, bluefin-dx-framework, bluefin-surface, bluefin-dx-surface]
+        base_name: [bluefin, bluefin-dx, bluefin-framework, bluefin-dx-framework, bluefin-surface, bluefin-dx-surface, bluefin-dx-surface-nvidia]
         major_version: [38]
         exclude:
           - base_name: bluefin-dx-framework
@@ -36,6 +36,9 @@ jobs:
             target_name: framework
           - base_name: bluefin-surface
             target_base: bluefin
+            target_name: surface
+          - base_name: bluefin-dx-surface
+            target_base: bluefin-dx
             target_name: surface
           - major_version: 38
             is_latest_version: true
