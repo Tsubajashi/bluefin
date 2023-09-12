@@ -4,6 +4,7 @@ nvidia-after-rebase:
 
 # Set up Bazzite-Arch Distrobox container
 install-bazzite-arch:
+  BASE_IMAGE_NAME=silverblue
   echo 'Installing Bazzite Arch...' && \
   if [[ ${BASE_IMAGE_NAME} == 'kinoite' ]]; then \
     distrobox create --name bazzite-arch --image ghcr.io/ublue-os/bazzite-arch --nvidia --yes --volume /usr/lib/extest/libextest.so:/usr/lib/extest/libextest.so:ro --volume /usr/share/icons:/usr/share/icons:ro --volume /usr/share/themes:/usr/share/themes:ro; \
