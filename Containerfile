@@ -96,7 +96,6 @@ RUN systemctl enable podman.socket
 RUN systemctl disable pmie.service
 RUN systemctl disable pmlogger.service
 
-
 RUN /tmp/workarounds.sh
 
 # Clean up repos, everything is on the image so we don't need them.
@@ -109,6 +108,35 @@ RUN sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_kylegospo-system76-s
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
+
+FROM bluefin as bluefin-surface
+
+# Add Linux Surface repo
+RUN wget https://pkg.surfacelinux.com/fedora/linux-surface.repo -P /etc/yum.repos.d
+
+# Install Surface kernel
+RUN wget https://github.com/linux-surface/linux-surface/releases/download/silverblue-20201215-1/kernel-20201215-1.x86_64.rpm -O \
+    /tmp/surface-kernel.rpm && \
+    rpm-ostree cliwrap install-to-root / && \
+    rpm-ostree override replace /tmp/surface-kernel.rpm \
+        --remove kernel-core \
+        --remove kernel-devel-matched \
+        --remove kernel-modules \
+        --remove kernel-modules-extra \
+        --remove libwacom \
+        --remove libwacom-data \
+        --install kernel-surface \
+        --install iptsd \
+        --install libwacom-surface \
+        --install libwacom-surface-data
+
+# Cleanup & Finalize
+RUN rm -rf \
+        /tmp/* \
+        /var/* && \
+    mkdir -p /var/tmp && \
+    chmod -R 1777 /var/tmp && \
+    ostree container commit
 
 # Image for Framework laptops
 FROM bluefin AS bluefin-framework
