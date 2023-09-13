@@ -13,6 +13,10 @@ install-bazzite-arch:
   sleep 10 && \
   rm -f ~/Desktop/steam.desktop
 
+# if install-bazzite-arch doesnt work
+readme-bazzite-arch:
+  xdg-open https://github.com/ublue-os/bazzite-arch
+
 # Run a one minute system benchmark
 benchmark:
   echo 'Running a 1 minute benchmark ...'
