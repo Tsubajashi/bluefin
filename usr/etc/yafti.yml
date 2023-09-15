@@ -82,17 +82,12 @@ screens:
           packages:
           - Bottles: com.usebottles.bottles
           - Heroic Games Launcher: com.heroicgameslauncher.hgl
-          - Lutris: net.lutris.Lutris
           - RetroArch: org.libretro.RetroArch
-          - Final Fantasy XIV Launcher: dev.goats.xivlauncher
           - Cartridges: hu.kramo.Cartridges
           - MangoHUD for most Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/23.08
           - MangoHUD for Steam: com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
           - MangoHUD for older Flatpaks: org.freedesktop.Platform.VulkanLayer.MangoHud/22.08
-          - Steam: com.valvesoftware.Steam
-          - Gamescope for Steam: org.freedesktop.Platform.VulkanLayer.gamescope
           - Proton Updater (GTK) for Steam: com.vysp3r.ProtonPlus
-          - Protontricks: com.github.Matoking.protontricks
         Office:
           description: Bow to Capitalism
           default: false
