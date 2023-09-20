@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/Tsubajashi/bluefin/compare/v1.4.0...v1.4.1) (2023-09-20)
+
+
+### Bug Fixes
+
+* disable signing for other workflows ([81140ae](https://github.com/Tsubajashi/bluefin/commit/81140ae54f091ea5ce94cf9517ffa60bee86988e))
+
 ## [1.4.0](https://github.com/Tsubajashi/bluefin/compare/v1.3.0...v1.4.0) (2023-09-20)
 
 
