@@ -35,7 +35,6 @@ RUN /tmp/build.sh && \
     systemctl enable tailscaled.service && \
     systemctl enable dconf-update.service && \
     systemctl enable com.system76.Scheduler.service && \
-    ln -s "/usr/share/fonts/google-noto-sans-cjk-fonts" "/usr/share/fonts/noto-cjk" && \
     fc-cache -f /usr/share/fonts/ubuntu && \
     fc-cache -f /usr/share/fonts/inter && \
     rm -f /etc/yum.repos.d/tailscale.repo && \

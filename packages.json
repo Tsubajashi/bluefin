@@ -32,7 +32,6 @@
 				"lite-xl",
 				"zsh-autosuggestions",
 				"papirus-icon-theme",
-				"google-noto-sans-cjk-fonts",
 				"neofetch"
 			],
 			"bluefin-dx": [
@@ -92,8 +91,7 @@
 				"firefox-langpacks",
 				"firefox",
 				"gnome-software-rpm-ostree",
-				"gnome-tour",
-				"google-noto-sans-cjk-vf-fonts"
+				"gnome-tour"
 			],
 			"bluefin-dx": [],
 			"bluefin-framework": [
