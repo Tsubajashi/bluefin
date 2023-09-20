@@ -1,5 +1,44 @@
 # Changelog
 
+## [1.4.0](https://github.com/Tsubajashi/bluefin/compare/v1.3.0...v1.4.0) (2023-09-20)
+
+
+### Features
+
+* add another just option ([49a985c](https://github.com/Tsubajashi/bluefin/commit/49a985c19f41368e7b603b31931fa55f166bcee4))
+* add boot_menu entry for surface versions ([d0ef0f8](https://github.com/Tsubajashi/bluefin/commit/d0ef0f8e42b85c7bdbc5858f4c3d56f41c58c22e))
+* add btop to image ([2aeb8e5](https://github.com/Tsubajashi/bluefin/commit/2aeb8e52c9d8aef6750dc6c1c94dfd68b3aa6390))
+* add gnome-ternial nautilus and pop shell ([b2b3039](https://github.com/Tsubajashi/bluefin/commit/b2b3039e87655b6204995eb8efe5d3a317d30fe2))
+* add mission center in yafti ([fd6af0c](https://github.com/Tsubajashi/bluefin/commit/fd6af0c61ebd591a02253e93103de9ba59cc61a0))
+* add mullvad to containerfile ([a30a1e7](https://github.com/Tsubajashi/bluefin/commit/a30a1e701d673699f878afb2b008f7219cfaabdf))
+* add neofetch in package list ([3fe1616](https://github.com/Tsubajashi/bluefin/commit/3fe1616a5d6d9a3f3b30d7dcd2ffa848c7507b0b))
+* add papirus-icon-theme ([cf6bc2d](https://github.com/Tsubajashi/bluefin/commit/cf6bc2d9227faf4c3bd7196f5b10349ed3646aa4))
+* add surface image ([3b1b505](https://github.com/Tsubajashi/bluefin/commit/3b1b5059086cbaa1a67b0d6153f909ed03167231))
+* add surface images ([2fd8673](https://github.com/Tsubajashi/bluefin/commit/2fd8673c637dada8f8095883a71c283b1c2480ca))
+* enable pop-shell by default, change default configs ([29d6969](https://github.com/Tsubajashi/bluefin/commit/29d696923abba803272d9f5b11f5503db2882866))
+* install-bazzite-arch in yafti ([367a9eb](https://github.com/Tsubajashi/bluefin/commit/367a9ebe36f3f9c37e5d0ae0649b6a89ec339a96))
+* yafti - Add new Development Tools Section ([2430d83](https://github.com/Tsubajashi/bluefin/commit/2430d8347717f15dd5c1cf89522f54a2b45d0aed))
+
+
+### Bug Fixes
+
+* change location of cjk fonts to bluefin ([077ce63](https://github.com/Tsubajashi/bluefin/commit/077ce63510f427c761a48111a2366d2c1ac785b3))
+* change terra repo to copr, nerd fonts. ([dc98089](https://github.com/Tsubajashi/bluefin/commit/dc98089b0d772fda532fc2b95f8dbe3f6fdc904c))
+* clean up nvidia boot option in iso ([2cd8962](https://github.com/Tsubajashi/bluefin/commit/2cd8962e22da1907e668f1d75c9d95ed09b533ce))
+* cleanup for install-bazzite-arch ([1a1b7c1](https://github.com/Tsubajashi/bluefin/commit/1a1b7c1d11137eade9e97c79dee2f4889acfcd84))
+* cleanup unnecessary yafti entries ([95fa2de](https://github.com/Tsubajashi/bluefin/commit/95fa2dedd76245fe224b8873b08d925ceb7a4cfc))
+* exclude silverblue cjk fonts ([35e14c6](https://github.com/Tsubajashi/bluefin/commit/35e14c6058be12ed6b31c472e53ee0e078e0f6bf))
+* install-bazzite-arch syntax ([fccd613](https://github.com/Tsubajashi/bluefin/commit/fccd613c2993832814f25dc6357d74bac4f644cb))
+* link cjk fonts to hardcoded names of steam ([5bd571c](https://github.com/Tsubajashi/bluefin/commit/5bd571c822fe1796753e2164ecd250915c93260d))
+* move system76-scheduler to std ([f6ba81d](https://github.com/Tsubajashi/bluefin/commit/f6ba81d3b26087f0224e9957b007d8ef099fa964))
+* remove cjk workaround ([a3d4ee4](https://github.com/Tsubajashi/bluefin/commit/a3d4ee4cebd7682a65ab23ffede3e364e1ccd901))
+* revert surface until i understand it more. ([d70727d](https://github.com/Tsubajashi/bluefin/commit/d70727d3725116de6c259221718c933237f423dc))
+* simplifying install-bazzite-arch ([81befab](https://github.com/Tsubajashi/bluefin/commit/81befabc3b4c60be1465501044dae2444ab62480))
+* surface build ([658940d](https://github.com/Tsubajashi/bluefin/commit/658940d6f564aa3c2584eb68909aadef95368a22))
+* update deps ([c09f784](https://github.com/Tsubajashi/bluefin/commit/c09f7847a0c1e74a90581a727bd31b0345571824))
+* wrong entry ([cbb781d](https://github.com/Tsubajashi/bluefin/commit/cbb781d3d844e381cf07cfe100f76a08d775ddab))
+* yafti: add additional Packages for better compatibility ([31f02cd](https://github.com/Tsubajashi/bluefin/commit/31f02cdd0d5c52809f7f38a632cac51ffeb963a7))
+
 ## [1.3.0](https://github.com/Tsubajashi/bluefin/compare/v1.2.0...v1.3.0) (2023-09-07)
 
 
